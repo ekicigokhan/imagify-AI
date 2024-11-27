@@ -6,7 +6,7 @@ import { AppContext } from "../context/AppContext";
 export default function Result() {
   const [image, setimage] = useState(assets.sample_img_1);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
 
   const { generateImage } = useContext(AppContext);
